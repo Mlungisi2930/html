@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- SEO Meta Data -->
+    <title>Accessible Web Design Guide | Semantic HTML5 & SEO Basics</title>
+    <meta name="description" content="Learn how to build accessible websites using semantic HTML5 elements while implementing SEO best practices for better discoverability.">
+    <meta name="keywords" content="HTML5, semantic HTML, web accessibility, WCAG, SEO basics, web development">
+    <meta name="author" content="Web Accessibility Team">
+    
+    <!-- Favicon (would be placed in root directory) -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Skip Navigation Link (visually hidden but accessible to screen readers) -->
+    <a class="sr-only" href="#main-content">Skip to main content</a>
+    
+    <!-- Site Header -->
+    <header role="banner">
+        <h1>Web Accessibility Guide</h1>
+        <p>Building inclusive digital experiences</p>
+        
+        <!-- Primary Navigation -->
+        <nav aria-label="Primary navigation">
+            <h2 class="sr-only">Site Navigation</h2>
+            <ul>
+                <li><a href="#home" aria-current="page">Home</a></li>
+                <li><a href="#semantics">Semantic HTML</a></li>
+                <li><a href="#a11y">Accessibility</a></li>
+                <li><a href="#seo">SEO Basics</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main Content Area -->
+    <main id="main-content" role="main">
+        <!-- Hero Section -->
+        <section id="home" aria-labelledby="home-heading">
+            <h2 id="home-heading">Creating Accessible Websites</h2>
+            <p>Learn how semantic HTML5 elements improve both accessibility and search engine optimization.</p>
+            
+            <figure>
+                <img src="web-accessibility.jpg" 
+                     alt="Diverse group of people using computers and mobile devices with accessibility features" 
+                     width="800" 
+                     height="450">
+                <figcaption>Web accessibility benefits all users</figcaption>
+            </figure>
+        </section>
+        
+        <!-- Semantic HTML Section -->
+        <section id="semantics" aria-labelledby="semantics-heading">
+            <h2 id="semantics-heading">Semantic HTML5 Elements</h2>
+            
+            <article aria-labelledby="article-element">
+                <h3 id="article-element"><code>&lt;article&gt;</code> Element</h3>
+                <p>Use for self-contained content that makes sense on its own, like blog posts or news articles.</p>
+            </article>
+            
+            <article aria-labelledby="section-element">
+                <h3 id="section-element"><code>&lt;section&gt;</code> Element</h3>
+                <p>Defines thematic groupings of content that should appear in the document outline.</p>
+            </article>
+            
+            <article aria-labelledby="landmark-roles">
+                <h3 id="landmark-roles">Landmark Roles</h3>
+                <p>Elements like <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, and <code>&lt;footer&gt;</code> provide built-in ARIA landmarks.</p>
+            </article>
+        </section>
+        
+        <!-- Accessibility Section -->
+        <section id="a11y" aria-labelledby="a11y-heading">
+            <h2 id="a11y-heading">Accessibility Essentials</h2>
+            
+            <article>
+                <h3>Text Alternatives</h3>
+                <p>Always provide meaningful <code>alt</code> text for images and proper labels for form controls.</p>
+            </article>
+            
+            <article>
+                <h3>Keyboard Navigation</h3>
+                <p>Ensure all interactive elements are reachable and usable with keyboard alone.</p>
+            </article>
+            
+            <article>
+                <h3>Color Contrast</h3>
+                <p>Maintain sufficient contrast between text and background colors (minimum 4.5:1).</p>
+            </article>
+        </section>
+        
+        <!-- SEO Section -->
+        <section id="seo" aria-labelledby="seo-heading">
+            <h2 id="seo-heading">SEO Fundamentals</h2>
+            
+            <article>
+                <h3>Semantic Markup</h3>
+                <p>Search engines prioritize well-structured content using proper HTML5 elements.</p>
+            </article>
+            
+            <article>
+                <h3>Heading Hierarchy</h3>
+                <p>Use heading levels (h1-h6) in order to establish content structure and importance.</p>
+            </article>
+            
+            <article>
+                <h3>Meta Tags</h3>
+                <p>Include descriptive title and meta description tags to improve search results.</p>
+            </article>
+        </section>
+        
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-heading">
+            <h2 id="contact-heading">Contact Us</h2>
+            <address>
+                <p>Email: <a href="mailto:accessibility@example.com">accessibility@example.com</a></p>
+                <p>Phone: <a href="tel:+15551234567">(555) 123-4567</a></p>
+            </address>
+        </section>
+    </main>
+    
+    <!-- Site Footer -->
+    <footer role="contentinfo">
+        <h2 class="sr-only">Footer Information</h2>
+        <p><small>&copy; 2023 Web Accessibility Guide. All rights reserved.</small></p>
+        <p><a href="#privacy">Privacy Policy</a> | <a href="#accessibility">Accessibility Statement</a></p>
+    </footer>
+</body>
+</html>
